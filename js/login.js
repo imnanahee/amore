@@ -24,7 +24,7 @@ if (currentPageId === 'loginPage') {
             // 인증 성공 시
             sessionStorage.setItem('userName', authenticatedUser.userName);
             if (authenticatedUser.userId === 'user') {
-                window.location.href = 'index.html';
+                window.location.href = 'lecture_list.html';
             } else if (authenticatedUser.userId === 'master') {
                 window.location.href = 'dashboard.html';
             }
@@ -37,7 +37,7 @@ if (currentPageId === 'loginPage') {
     logoutButton.addEventListener("click", function () {
         sessionStorage.removeItem('userName');
         alert('로그아웃 되었습니다.');
-        window.location.href = 'login.html'
+        window.location.href = 'index.html'
     });
 
 }
