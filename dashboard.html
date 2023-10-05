@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>아모레퍼시픽 &gt; 관리자 페이지 </title>
+        <link href="css/common.css" rel="stylesheet" type="text/css">
+        <link href="css/manager.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" async="" src="https://cdn.channel.io/plugin/ch-plugin-web.js" charset="UTF-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/63b8cec292.js" crossorigin="anonymous"></script>
+        <script defar src="js/include.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/dashboard.js"></script>
+    </head>
+    <body>
+        <footer data-include-path="header.html"></footer>
+        <div id="AB_contents">
+            <div class="wrap">
+                <div class="right_cont">
+                    <h2>관리자 전용</h2>
+                    <ul>
+                        <li><a href="dashboard.html"><i class="fa-light fa-user"></i>수강 정보</a></li>
+                        <li><a href="qna.html"><i class="fa-light fa-q"></i>질문답변</a></li>
+                    </ul>
+                </div>
+                <div class="manager">
+                    <div class="search_wrap">
+                        <div class="search_box">
+                            <form class="" action="/" method="get">
+                                <input type="search" name="search_input" placeholder="이름&amp;강의명" value=""><button type="submit" name="button">조회</button>
+                            </form>
+                        </div>
+                        <div class="option">
+                            <p class="advice"><i class="fa-light fa-circle-question"></i>도움말</p>
+                            <p class="file_down"><i class="fa-light fa-file-excel"></i>다운로드</p>
+                        </div>
+                    </div>
+                    <div class="top_menu">
+                        <ul class="tit">
+                            <li class="all">전체</li>
+                            <li>수강중인 직원</li>
+                            <li>미수강 직원</li>
+                            <li class="all_progress">평균 수강진행률</li>
+                            <li>수강률 80%이상인 직원</li>
+                            <li>퀴즈 응시자</li>
+                            <li>퀴즈 미응시자</li>
+                            <li>퀴즈 평균점수</li>
+                            <li>수료자</li>
+                        </ul>
+                        <ul class="cont">
+                            <li class="all">30</li>
+                            <li>0명</li>
+                            <li>30명</li>
+                            <li class="all_progress">0.00%</li>
+                            <li>0명</li>
+                            <li>0명</li>
+                            <li>30명</li>
+                            <li>0점</li>
+                            <li>0명</li>
+                        </ul>
+                    </div>
+                    <div class="student_list manager_inner">
+                        <ul class="tit">
+                            <li class="num">NO</li>
+                            <li class="name">수강생명</li>
+                            <li class="goods">강의명</li>
+                            <li class="percent">수강진행률</li>
+                            <li class="last_time">마지막 수강시간</li>
+                            <li class="state">평가상태</li>
+                        </ul>
+                        <div class="lecture_state">
+                            <ul class="list">
+                                <li class="num" data-serial="1" data-goods_serial="418"><span>1</span></li>
+                                <li class="name"><span>아모레관리자</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li><li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                    <li class="num" data-serial="8" data-goods_serial="418"><span>2</span></li>
+                                    <li class="name"><span>한재호</span></li><li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                    <li class="percent"><span>0%</span></li><li class="last_time"><span>-</span></li>
+                                    <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="9" data-goods_serial="418"><span>3</span></li>
+                                <li class="name"><span>최준형</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li><li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="10" data-goods_serial="418"><span>4</span></li>
+                                <li class="name"><span>김태인</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="11" data-goods_serial="418"><span>5</span></li>
+                                <li class="name"><span>조은혜</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="12" data-goods_serial="418"><span>6</span></li>
+                                <li class="name"><span>장유라</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="13" data-goods_serial="418"><span>7</span></li>
+                                <li class="name"><span>이훈표</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="14" data-goods_serial="418"><span>8</span></li>
+                                <li class="name"><span>박종채</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="15" data-goods_serial="418"><span>9</span></li>
+                                <li class="name"><span>조윤</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="16" data-goods_serial="418"><span>10</span></li>
+                                <li class="name"><span>이준석</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li><li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="17" data-goods_serial="418"><span>11</span></li>
+                                <li class="name"><span>김한규</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="18" data-goods_serial="418"><span>12</span></li>
+                                <li class="name"><span>박종철</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li><li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="19" data-goods_serial="418"><span>13</span></li>
+                                <li class="name"><span>박유진</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li><li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="20" data-goods_serial="418"><span>14</span></li>
+                                <li class="name"><span>조영석</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="21" data-goods_serial="418"><span>15</span></li>
+                                <li class="name"><span>김미근</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="22" data-goods_serial="418"><span>16</span></li>
+                                <li class="name"><span>신혜영</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="23" data-goods_serial="418"><span>17</span></li>
+                                <li class="name"><span>송시영</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="24" data-goods_serial="418"><span>18</span></li>
+                                <li class="name"><span>이윤주</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="25" data-goods_serial="418"><span>19</span></li>
+                                <li class="name"><span>안현진</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="26" data-goods_serial="418"><span>20</span></li>
+                                <li class="name"><span>전세현</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li><li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="27" data-goods_serial="418"><span>21</span></li>
+                                <li class="name"><span>정현정</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="28" data-goods_serial="418"><span>22</span></li>
+                                <li class="name"><span>홍윤소</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li><li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="29" data-goods_serial="418"><span>23</span></li>
+                                <li class="name"><span>홍한선</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li><li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="30" data-goods_serial="418"><span>24</span></li>
+                                <li class="name"><span>김선우</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="31" data-goods_serial="418"><span>25</span></li>
+                                <li class="name"><span>신승재</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li><li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="32" data-goods_serial="418"><span>26</span></li>
+                                <li class="name"><span>이동건</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li><li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="33" data-goods_serial="418"><span>27</span></li>
+                                <li class="name"><span>공주리</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="34" data-goods_serial="418"><span>28</span></li>
+                                <li class="name"><span>서정은</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li><li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="35" data-goods_serial="418"><span>29</span></li>
+                                <li class="name"><span>윤선영</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li><li class="state"><span>평가전</span></li>
+                            </ul>
+                            <ul class="list">
+                                <li class="num" data-serial="36" data-goods_serial="418"><span>30</span></li>
+                                <li class="name"><span>이현</span></li>
+                                <li class="goods"><span>[ver.2023] 바쁜 마케터를 위한 GA4 초단기 실습 과정</span></li>
+                                <li class="percent"><span>0%</span></li>
+                                <li class="last_time"><span>-</span></li>
+                                <li class="state"><span>평가전</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer data-include-path="footer.html"></footer>
+    </body>
+</html>

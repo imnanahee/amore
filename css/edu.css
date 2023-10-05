@@ -1,0 +1,219 @@
+@charset utf-8;
+
+.wrap h3 {font-size: 20px; font-weight: bold; color: #000; line-height: 28px; word-break: keep-all;}
+.wrap .layout_tit {margin-bottom: 20px;}
+.previous_class {margin: 50px 0 100px;}
+.previous_class .null {font-size: 16px; line-height: 25px;}
+.previous_class a {display: block; background: #F2F4F6; padding: 24px; position: relative; border-radius: 16px;}
+.previous_class a > div {display: flex;}
+.previous_class .img {float: left; margin-right: 25px;}
+.previous_class .img img {width: 120px; height: 120px;}
+.previous_class .info .subject {color: #000; font-size: 17px; line-height: 21px;}
+.previous_class .details span { display: inline-block; width: 80px;}
+.previous_class .details {letter-spacing: -0.3px; line-height: 24px; padding: 6px 0;}
+.previous_class .details p {font-size: 14px; line-height: 26px;}
+.previous_class .state p {background: #333; color: #fff; display: inline-block; padding: 0 20px; box-sizing: border-box; line-height: 34px; border-radius: 6px; font-size: 15px; margin-top: 8px;}
+.previous_class .state p i {color: #fff;}
+.previous_class .details em {font-style: normal; color: #2989f7; font-weight: 600; margin-left: 3px; display: inline-block;}
+.online_lecture {margin-bottom: 100px;}
+.online_lecture .wrap {display: flex; gap: 20px; flex-wrap: wrap; justify-content: flex-start; padding: 0 !important;}
+.online_lecture .cell {position: relative; width: calc(25% - 15px);}
+.online_lecture .cell img {width: 100%; height: auto;}
+/* .online_lecture .cell .img {overflow: hidden; border-radius: 12px;} */
+.online_lecture .cell .state {text-align: center; line-height: 36px; font-size: 14px; margin-top: 5px;}
+.online_lecture .cell .state p {background: #2989f7; color: #FFF; font-size: 14px;}
+.online_lecture .cell .state i {color: #fff;}
+.online_lecture .cell a {display: block; color: #666;}
+.online_lecture .cell .details {padding: 12px 0; letter-spacing: -0.3px; line-height: 22px;}
+.online_lecture .cell .details p {font-size: 14px; line-height: 26px;}
+.online_lecture .cell .details span {display: inline-block; width: 60px;}
+.online_lecture .cell .details em {font-style: normal; color: #2989f7; font-weight: 600; margin-left: 8px; display: inline-block;}
+.online_lecture .cell .evaluate {margin:7px 0 0; height: 32px; line-height: 32px; background: #fff; border: 1px solid #2989F7;}
+.online_lecture .cell .for_quiz {text-align: center; font-size: 14px; color: #2989F7; transition: all 0.1s; font-weight: 500;}
+.online_lecture .cell .for_quiz:hover {text-decoration: underline; font-weight: bold;}
+.online_lecture .cell .for_quiz i {margin-right: 5px; vertical-align: baseline; color: #2989F7;}
+
+/* 영상재생 */
+.v_wrap {background: #F2F4F6; height: 100%;}
+.v_main {width: 100%; display: flex; justify-content: space-between; padding: 30px 50px; overflow: hidden; position: relative; box-sizing: border-box;}
+.v_main .video_box {width: calc( 100% - 430px ); position: relative;}
+.v_main .v_content {position: relative; padding-bottom: 56.25%; background-color: #e0e0e0; height: 0; overflow: hidden; box-shadow: 0 0 8px rgb(0 0 0 / 8%);}
+.video_box .video_js {display: block; vertical-align: top; box-sizing: border-box; color: #fff; background-color: #000; position: relative; padding: 0; font-size: 10px; line-height: 1; word-break: initial;}
+.video_box .video_player {max-width: 100%; top: 0; left: 0; width: 100%; height: 0; padding-bottom: 56.25%; background-color: #000; overflow: hidden; box-shadow: 0 0 8px rgb(0 0 0 / 8%); cursor: pointer;}
+.video_box .video_player i {position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%); color: #fff; font-size: 6em; opacity: 0.4;}
+.video_box .v_title {position: relative;}
+.video_box .v_title .edu_name {padding: 28px 0 24px; float: left;}
+.video_box .v_title .edu_name p {font-size: 21px;}
+.info_box {width: 400px; min-height: 700px; background-color: #FFF;}
+.info_box .v_info {padding: 24px 24px 0 24px;}
+.info_box .v_info h3 {font-size: 23px; font-weight: 500; line-height: 30px; margin-bottom: 16px; color: #000; letter-spacing: 0;}
+.info_box .v_info p {line-height: 26px; font-size: 14px; letter-spacing: 0;}
+.info_box .v_info p .head {color: #999; font-size: 13px; display: inline-block; width: 60px; font-weight: 600;}
+.info_box .v_info p .progress_info {font-weight: normal;}
+.info_box .v_info .v_slider {height: 6px; background-color: #eee; margin: 14px auto 20px; position: relative; border-radius: 10px; overflow: hidden;}
+.info_box .v_info .v_slider .progress_bar {width: 10px; height: 6px; position: absolute; top: 0; left: 0; background-color: #E74C3C; z-index: 10;}
+.info_box .select_tab_box .tab_box {display:flex; border-bottom:1px solid #EEE; justify-content: space-around; padding:0 20px;}
+.info_box .select_tab_box .tab_box a {display:block; line-height:44px; font-size:15px; color:#BBB; font-weight:bold; position:relative;}
+.info_box .select_tab_box .tab_box a:hover span {color:#000; transition:all 0.2s;}
+.info_box .select_tab_box .tab_box a.on {border-bottom: 3px solid #000; font-weight: bold; color: #000;}
+.info_box .select_tab_box .tab_box a.on span {color:#000; font-weight:bold;}
+.info_box .select_tab_box {display: flex; justify-content: center; position: relative;}
+.info_box .select_tab_box li {flex-basis: 33.33%; font-size: 15px;}
+.info_box .select_tab_box li > a {font-weight: 500; display: block; text-align: center; height: 45px; line-height: 45px;}
+.info_box .select_tab_box li a.on {position: relative; color: #000; font-weight: bold;}
+.info_box .select_tab_box li a.on::after {content:''; position: absolute; left: 50%; bottom: 0; margin-left: -25px; background-color: #000; height: 3px; width: 50px;}
+.info_box .select_tab_box li > div {border-top: 1px solid #EEE; background: #fff; position: absolute; top: 45px; left: 0; width: 100%;}
+/* 강의목록 */
+.info_box .course_list {height:430px; overflow-y:auto;}
+.info_box .course_list.block {display: block;}
+.info_box .course_list .item:first-child {border-top:0; margin-top: 7px;}
+.info_box .course_list .item:last-child {margin-bottom: 7px;}
+.info_box .course_list .item {padding:12px 20px 12px 50px; cursor:pointer; border-top:1px solid #F0F0F0; position:relative; color:#454545;}
+.info_box .course_list .item.active {transition:all 0.2s;}
+.info_box .course_list .item.active + div {border-color:#FCEDEC;}
+.info_box .course_list .item.active .item_tit {font-weight:bold; color:#000;}
+.info_box .course_list .item span {display:inline-block;}
+.info_box .course_list .item .icon {font-size:18px; position:absolute; left:20px; top:12px;}
+.info_box .course_list .item .icon .fas {color:#000;}
+.info_box .course_list .item .item_tit {font-size:15px; width:100%; word-break:keep-all; color:#666;}
+.info_box .course_list .item .time {font-size:12px; letter-spacing:0; color:#AAA; margin-top:8px;}
+/* 참고자료 */
+.info_box .reference{display:none; height:430px; overflow-y:auto;}
+.info_box .reference.block {display:block;}
+.info_box .reference .item {margin:10px 20px; box-sizing:border-box; display:flex; justify-content:space-around;}
+.info_box .reference .item a {display:block; width: 100%; padding:16px; box-sizing:border-box; background:#F5F5F7; border-radius:15px;}
+.info_box .reference .item:hover a {color:#000; font-weight:600; transition:all 0.2s;}
+.info_box .reference .item.active{background-color:#FCEDEC;}
+.info_box .reference .item span{display:inline-block;}
+.info_box .reference .item .item_tit{font-size:15px;}
+.info_box .reference .item .item_tit i {font-size:16px; vertical-align:bottom; margin-right:8px;}
+.info_box .reference .item .link {float:right; font-size:14px;}
+.info_box .reference .blank {font-size:14px; text-align:center; color:#999; line-height:40px;}
+/* 질의답변 */
+.info_box .play_lecture_qna {display: none; height: 430px;}
+.info_box .play_lecture_qna.block {display: block;}
+.info_box .play_lecture_qna .inner {position: relative; height: 100%;}
+.info_box .playing_lecture_option_qna_write {position: absolute; bottom: 20px; padding-top: 20px; border-top: 1px solid #EEE;}
+.info_box .playing_lecture_option_qna_write textarea {width: calc(100% - 40px); border: 1px solid #EEE; resize: none; height: 125px; font-size: 15px; margin:0 20px; border-radius: 3px; padding: 15px; box-sizing: border-box;}
+.info_box .playing_lecture_option_qna_write button {width: calc(100% - 40px); height: 38px; line-height: 38px; font-size: 14px; text-align: center; margin:15px 20px 0; background: #e0e0e0; border: none; cursor: pointer; border-radius: 3px;}
+.playing_lecture_option_qna .qna {height: 215px; overflow-y: scroll; padding: 20px 25px; box-sizing: border-box;}
+.playing_lecture_option_qna .cell {border-bottom: 1px solid #F0F0F0; padding:11px 20px; position: relative;}
+.playing_lecture_option_qna .cell:last-child {border-bottom: 0;}
+.playing_lecture_option_qna .cell p {line-height: 140%; word-break: break-all; -webkit-box-orient: vertical; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 14.5px;}
+.playing_lecture_option_qna .cell .query {width: calc(100% - 23%);}
+.playing_lecture_option_qna .cell .answer {margin-top: 10px;}
+.playing_lecture_option_qna .cell .query.on,
+.playing_lecture_option_qna .cell .answer.on {text-overflow: inherit; white-space: inherit;}
+.playing_lecture_option_qna .cell .time {position: absolute; right:20px; top:15px; font-size: 13px; color: #666;}
+.playing_lecture_option_qna .cell .icon {display: block; text-align: right;}
+.playing_lecture_option_qna .cell .icon i {cursor: pointer; padding: 7px 0 0 5px;}
+/* 팝업 */
+#lecture_pause_modal_wrap {width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.5); z-index: 1001;}
+.lecture_pause_modal {position: absolute; top: 50%; left: 50%; -o-transform: translateX(-50%) translateY(-50%);-ms-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); background: #fff; padding: 20px; width: 400px; border-radius: 5px;}
+.lecture_pause_modal h3 {margin-bottom: 15px; font-size: 19px;}
+.lecture_pause_modal p {font-size: 16px; line-height: 22px; margin-bottom: 20px;}
+.modal_btn_box {text-align: center;}
+.modal_btn_box button {background: #e0e0e0; border: none; font-size: 16px; width: 130px; height: 38px; line-height: 38px; border-radius: 3px; cursor: pointer;}
+.modal_btn_box button:active {position: relative; top:1px;}
+.modal_btn_box button.modal_submit {background: #fc6d35; color: #fff; margin-right: 8px; box-shadow: 0 0 8px rgb(0 0 0 / 8%);}
+/* 퀴즈 */
+#AB_contents.quiz {background: #f5f5f5; min-height: calc(100vh - 140px);}
+#AB_contents.quiz .wrap {max-width: 1000px;}
+#AB_contents.quiz .layout_my_tit {margin-bottom: 100px;}
+.start {display: none;}
+.start.on {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(51, 51, 51, 0.85); z-index: 100; display: table;}
+.start .inner {display: table-cell; vertical-align: middle; text-align: center; padding: 0 50px;}
+.start .inner p {font-size: 25px; color: #fff; letter-spacing: -1px; line-height: 40px;}
+.start button {background: #fff; margin-top: 25px; font-size: 18px; width: 130px; height: 42px; line-height: 42px; border-radius: 8px; color: #555; cursor: pointer; letter-spacing: -1px; box-shadow: 0 1px 10px rgba(0,0,0,0.2);}
+.start button:active {position: relative; top:2px;}
+.quiz_wrap {padding:50px 0;}
+.quiz_wrap .start {text-align: center; font-size: 40px; letter-spacing: -1px;}
+.quiz_wrap .quiz_cont {background: #fff; border-radius: 10px; position: relative; box-shadow: 0px 0px 20px rgb(0 0 0 / 20%);}
+.quiz_wrap .quiz_page {display: none;}
+.quiz_wrap .quiz_page.on {display: block;}
+.quiz_wrap .quiz_cont .ex_num {position: absolute; background: #fff; width: 90px; height: 90px; top: -50px; left: 50%; transform: translateX(-50%); border: 3px solid #e6e6e6; border-radius: 50px; line-height: 90px; text-align: center; font-size: 22px; font-weight: bold; color: #8ea2b0; z-index: 1;}
+.quiz_wrap .quiz_cont .example_box {position: relative; margin-bottom: 0; padding: 70px 20px 55px; background: #d3dce0; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+.quiz_wrap .quiz_cont .example_box::after {content: ''; display: block; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); height: 1px; width: calc(100% - 130px); background: #e1e7ea;}
+.quiz_wrap .quiz_cont .example_box p {background: #fff; border: 1px solid #e6e6e6; color: #252525; width: calc(100% - 270px); margin: 0 auto; line-height: 28px; padding: 20px; font-size: 18px; word-break: keep-all; box-sizing: border-box; border-radius: 8px; box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);}
+.quiz_wrap .quiz_cont .question {background: #d3dce0; padding: 60px 20px 50px;}
+.quiz_wrap .quiz_cont .question h4 {word-break: keep-all; color: #061342; text-align: center; line-height: 32px; width: calc(100% - 200px); margin: 0 auto; font-size: 20px;}
+.quiz_wrap .quiz_cont.choice .question {border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 70px 20px 55px;}
+.quiz_wrap .quiz_cont.answer_multiple .question {padding:70px 20px 60px;}
+.quiz_wrap .quiz_cont.example .answer {padding:0 30px; height: 250px;}
+.quiz_wrap .quiz_cont.example .answer p {width: calc(100% - 270px); padding: 0; line-height: 250px;}
+.quiz_wrap .quiz_cont .answer {text-align: center; padding: 40px 30px;}
+.quiz_wrap .answer input[type=text]  {height: 60px; line-height: 60px; border-radius: 5px; font-size: 17px; padding: 0 20px;}
+.quiz_wrap .answer input[type=radio] {position: absolute; opacity: 0; width: 0px;}
+.quiz_wrap .answer p {line-height: 30px; padding: 3px 0; font-size: 15px; border-radius: 50px; width: calc(100% - 200px); margin: 0 auto; cursor: pointer;}
+.quiz_wrap .answer input[type=text] {width: 100%; height: 42px; line-height: 42px; font-size: 15px; padding: 0 10px; box-sizing: border-box; border: 1px solid #d9d9d9;}
+.quiz_wrap .answer label {display: block; border: 3px solid #e6e6e6; word-break: keep-all; border-radius: 50px; font-size: 18px; padding:20px; box-sizing: border-box; line-height: 30px; margin-bottom: 15px; font-weight: 500; color: #061342; cursor: pointer;}
+.quiz_wrap .answer input:checked + label {border-color: #061342; transition: all 0.2s; font-weight: bold;}
+.quiz_wrap .answer_multiple p input[type=text] {margin-bottom: 10px;}
+.submit_wrap { text-align: center; margin: 80px 0;}
+.submit_wrap.nonSend {display: none;}
+.submit_wrap input[type=submit], .submit_wrap a {display: inline-block; background: #061342; border: none; font-weight: bold; color: #fff; height: 65px; line-height: 65px; width: calc(100% - 20%); font-size: 20px; cursor: pointer; border-radius: 10px; transition: all 0.2s; box-shadow: 0px 0px 20px rgb(0 0 0 / 30%);}
+.submit_wrap input[type=submit]:active, .submit_wrap a:active {position: relative; top:2px;}
+.paging_wrap {margin: 80px 0; text-align: center;}
+.paging_wrap p {cursor: pointer; display: inline-block; border-radius: 10px; width: 54px; height: 54px; background: #fff; border:2px solid #8ea2b0; text-align: center; transition: all 0.2s;}
+.paging_wrap p:hover {background: #8ea2b0;}
+.paging_wrap p:hover i {color: #fff;}
+.paging_wrap p.prev_btn {margin-right: 15px;}
+.paging_wrap p.none {display: none;}
+.paging_wrap p i {font-size: 28px; line-height: 54px; color: #8ea2b0;}
+/* 퀴즈 풀기 완료 */
+#AB_contents.quiz_grade {background: #f5f5f5;}
+#AB_contents.quiz_grade .wrap {min-height: calc(100vh - 140px); display: table;}
+#AB_contents.quiz_grade .wrap h3 {background: #d3dce0; padding: 60px 20px 50px; border-top-left-radius: 10px; border-top-right-radius: 10px; color: #061342;}
+.grade_wrap {display: table-cell; vertical-align: middle; width: 1000px; text-align: center;}
+.grade_wrap .wrap_inner {box-shadow: 0px 0px 20px rgb(0 0 0 / 20%); border-radius: 10px;}
+.quiz_result {display: none; background: #fff; border-radius: 10px; padding: 100px 0;}
+.quiz_result.on {display: block;}
+.quiz_result p {font-size: 20px; text-align: center; font-weight: 600;}
+/* .quiz_result .thanks_message {margin-top: 25px; color: #000; font-weight: bold; line-height: 32px;} */
+
+@media screen and (max-width:988px) {
+    .online_lecture .cell {width: calc(33% - 12px);}
+    .online_lecture .cell .details span {width: 50px;}
+    .online_lecture .cell .details em {margin-left: 2px;}
+
+    .v_main {display: inherit; padding: 0;}
+    .v_main .video_box {width: 100%;}
+    .video_box .v_title .edu_name {padding: 24px; float:inherit;}
+    .info_box {width: 100%;}
+    .info_box .select_tab_box .tab_box {padding:0 20px; border-bottom: 1px solid #EEE; border-top: 0; justify-content: space-around; }
+    .info_box .course_list .item {border-top: 0; }
+    .info_box .course_list .item .icon {font-size: 16px;}
+    .info_box .playing_lecture_option_qna_write {width: 100%;}
+
+    .quiz_wrap .answer input[type=text] {width: 100%; padding:0 10px; font-size: 14px; box-sizing: border-box;}
+}
+
+@media screen and (max-width:800px) {
+    .quiz_wrap .quiz_cont .example_box p {width: calc(100% - 10%);}
+    .quiz_wrap .quiz_cont .question h4 {width: 100%;}
+    .quiz_wrap .quiz_cont.example .answer {height: auto;}
+    .quiz_wrap .quiz_cont.example .answer p {line-height: 150px;}
+    .quiz_wrap .quiz_cont .answer p {width: 100% !important;}
+}
+
+
+@media screen and (max-width:600px) {
+    .previous_class a {padding:20px;}
+    .previous_class .img img {max-width: 150px; width: 100%; height: auto;}
+    .previous_class .details span {width: 50px;}
+    .online_lecture .cell {width: calc(50% - 10px);}
+    .online_lecture .cell .details  {font-size: 13px;}
+    .online_lecture .cell .details em  {display: none;}
+    
+    .lecture_pause_modal {width: 75%;}
+    .start.on .inner p {word-break: keep-all; font-size: 20px; line-height: 30px;}
+    .quiz_wrap .quiz_cont .example_box::after {width: calc(100% - 10%);}
+    .quiz_wrap .quiz_cont .example_box p {width: 100%; font-size: 16px;}
+    .quiz_wrap .quiz_cont .answer {padding: 40px 20px;}
+    /* .quiz_wrap .answer_multiple p input[type=text] {width: 100%;} */
+    .quiz_wrap .answer_multiple p input.multi_answer {margin-left: 0; margin-top: 8px;}
+    .quiz_wrap .answer label {line-height: 25px; font-size: 17px;}
+    .paging_wrap {margin: 80px 0;}
+    .submit_wrap input[type=submit] {width: 100%;}
+    br {display: inline-block; content: " "; padding: 0 2px;}
+}
