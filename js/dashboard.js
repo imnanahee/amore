@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
     
             // 형제 요소들 숨김
-            for (const i = 0; i < siblings.length; i++) {
+            for (let i = 0; i < siblings.length; i++) {
                 if (siblings[i] !== this) {
                     const child = siblings[i].querySelector('.ask_answer');
                     if (child) {
