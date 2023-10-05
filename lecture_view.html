@@ -7,10 +7,21 @@
         <script src="https://kit.fontawesome.com/63b8cec292.js" crossorigin="anonymous"></script>
         <link href="css/common.css" rel="stylesheet" type="text/css">
         <link href="css/edu.css" rel="stylesheet" type="text/css">
-        <script defar src="js/include.js"></script>
+        <script src="js/common.js"></script>
     </head>
     <body>
-        <header data-include-path="header.html"></header>
+        <header id="header">
+            <div class="wrap">
+                <h1>
+                    <a href="/" class="logo"><img src="images/AMOREPACIFIC_logo.png" height="24" alt="아이보스교육"></a>
+                </h1>
+                <ul>
+                    <li><span class="nickName"><strong></strong>님</span></li>
+                    <li><span class="greeting">방문 감사합니다!</span></li>
+                    <li><button id="logoutButton">로그아웃</button></li>
+                </ul>
+            </div>
+        </header>
         <div id="LayoutWrap">
             <div class="ABA-content-box v_wrap">
                 <div class="v_main">
@@ -162,7 +173,27 @@
                 </div>
             </div>
         </div>
-        <footer data-include-path="footer.html"></footer>
+        <footer id="footer">
+            <div class="wrap">
+                <h2 class="logo"><a href="/"><img src="images/ibossedu_logo_521_91.png" alt="아이보스교육"></a></h2>
+                <address>
+                    <p>(주)아이보스</p>
+                    <p>대표 이사 : 신용성</p>
+                    <p>사업자번호 : 105-87-01912</p>
+                    <p>통신판매업신고번호 : 2012-서울금천-0373호</p>
+                    <p>개인정보관리책임자 : 유리나</p>
+                    <p>주소 : 서울 금천구 벚꽃로 234, 1202호</p>
+                    <p>TEL : 02-862-7643</p>
+                </address>
+                <div class="info_r">
+                    <h3>고객센터</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);" class="channeltalk">문의하기</a></li>
+                        <li><i class="far fa-clock" aria-hidden="true"></i>평일 10:00 ~ 18:00 (점심시간 12:30 ~ 13:30)</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
         <script src="js/javascript.js"></script>
         <script src="js/login.js"></script>
     </body>
