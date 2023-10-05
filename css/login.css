@@ -1,0 +1,56 @@
+#loginBox {
+    margin:80px 0;
+}
+
+#loginBox .wrap {
+    text-align: center;
+}
+
+#loginBox .wrap h1 {
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+#loginBox .wrap label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+}
+
+#loginBox .wrap input {
+    display: block; 
+    margin: 0 auto; 
+    width: 300px; 
+    height: 38px; 
+    line-height: 38px; 
+    margin-bottom: 10px; 
+    border:1px solid #e0e0e0; 
+    border-radius: 3px; 
+    text-indent: 12px; 
+    font-size: 14px;
+}
+
+#loginBox .wrap button {
+    width: 300px; 
+    height: 42px; 
+    line-height: 42px; 
+    margin-top: 20px; 
+    background: #FC6D35; 
+    border:1px solid #FC6D35; 
+    border-radius: 3px; 
+    color: #fff;
+}
+
+
+@media screen and (max-width:600px) {
+    #loginBox {margin:50px 0;}
+    #loginBox .wrap span {display: block; margin:10px;}
+    #loginBox .wrap input,
+    #loginBox .wrap input[type=submit] {width: 90%;}
+}

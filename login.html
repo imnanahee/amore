@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>아모레퍼시픽 &gt; 로그인</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/63b8cec292.js" crossorigin="anonymous"></script>   
+</head>
+<body id="loginPage">
+    <div id="loginBox">
+        <div class="wrap">
+            <h1>로그인 페이지</h1>
+            <form id="loginForm">
+                <label for="userId">ID</label>
+                <input type="text" id="userId" name="userId" required placeholder="사용자 계정:user / 관리자 계정:master"><br>
+                <label for="password">PW</label>
+                <input type="password" id="password" name="password" required placeholder="비밀번호:pw1234"><br>
+                <button type="submit">로그인</button>
+            </form>
+            <button id="logoutButton" style="display: none;">로그아웃</button>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>
