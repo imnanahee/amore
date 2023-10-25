@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             for (let i = 0; i < inputRadio.length; i++) {
                 inputRadio[i].addEventListener('click', () => {
                     selectedAnswers[currentQuizIndex - 1] = inputRadio[i].value;
-                    console.log(selectedAnswers);
+                    // console.log(selectedAnswers);
                 });
             }
         }
