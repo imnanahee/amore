@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.querySelector('.quiz .next_btn');
     const prevBtn = document.querySelector('.quiz .prev_btn');
     const sendBtn = document.querySelector('.submit_wrap');
-    let currentQuizIndex = 0;
-    let selectedAnswers = [];
+    let currentQuizIndex = 0; // 퀴즈 인덱스 추적
+    let selectedAnswers = []; // 사용자 선택 답변 저장
 
     function loadQuiz() {
         const xhr = new XMLHttpRequest();
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tempDiv.innerHTML = xhr.responseText;
             const quizConts = tempDiv.querySelectorAll('.quiz_cont');
             const inputRadio = tempDiv.querySelectorAll('.answer input[name=answer]');
-            const result = quizConts[currentQuizIndex];
+            const result = quizConts[currentQuizIndex]; 
             document.querySelector('.quiz_page').classList.add('on');
 
             currentQuizIndex++;
@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (currentQuizIndex > 1) prevBtn.classList.remove('none');
             else prevBtn.classList.add('none');
             
+            // 마지막 퀴즈일 시 nextBtn 숨김
             if (currentQuizIndex > 4) {
                 nextBtn.classList.add('none');
                 sendBtn.classList.remove('nonSend');
@@ -49,7 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
         xhr.send();
     }
 
-    function startOff() {
+    // 제출 시에 나올 화면 표시
+    function startOff() { 
         const start = document.querySelector('.start');
         const quizWrap = document.querySelector('.quiz_page');
         const done = document.querySelector('.quiz_result');
@@ -63,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.addEventListener('click', () => {
         const answer = document.querySelectorAll('input[name=answer]:checked');
         if (answer.length > 0) loadQuiz();
-        else alert('정답을 선택해주세요.');
+        else alert('정답을 선택해주세요.'); // 정답 선택 안했을 시
     });
     
     prevBtn.addEventListener('click', () => {
@@ -74,9 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     sendBtn.addEventListener('click', () => {
-        if (selectedAnswers.length >= 5) {
+        if (selectedAnswers.length >= 5) { // 퀴즈 정답 5개 모두 선택했을 시
             if (confirm('제출하시겠습니까?')) {
-                localStorage.setItem('isSubmitted', true);
+                localStorage.setItem('isSubmitted', true); // 사용자 제출 여부 확인
                 alert('제출되었습니다.');
                 location.reload();
             } else {
@@ -85,17 +87,17 @@ document.addEventListener('DOMContentLoaded', () => {
         } else alert('문제를 모두 풀어주세요.');
     });
 
-    const quizStartBtn = document.querySelector('#quizStartBtn');
-    quizStartBtn.addEventListener('click', () => {
-        const start = document.querySelector('.start');
-        if (start.classList.contains('on')) {
-            document.querySelector('body').style.overflowY = 'scroll';
-            start.classList.remove('on');
-        }
-    });
+    // const quizStartBtn = document.querySelector('#quizStartBtn');
+    // quizStartBtn.addEventListener('click', () => {
+    //     const start = document.querySelector('.start');
+    //     if (start.classList.contains('on')) {
+    //         document.querySelector('body').style.overflowY = 'scroll';
+    //         start.classList.remove('on');
+    //     }
+    // });
 
     const isSubmitted = localStorage.getItem('isSubmitted');
     if (isSubmitted === null) loadQuiz();
-    else startOff();
+    else startOff(); // 제출된 화면 표시
 
 })
