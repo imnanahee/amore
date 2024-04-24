@@ -42,6 +42,7 @@ input {-webkit-appearance: none; -webkit-border-radius: 0;}
 .manager .manager_inner ul li.last_time {flex-basis: 40%;}
 .manager .manager_inner ul li.state {flex-basis: 20%;}
 .manager .manager_inner ul.list {margin-top: 8px;}
+.manager .manager_inner ul.list:first-child {margin-top: 0;}
 /* .manager .lecture_state {max-height: 400px; overflow-y:scroll;} */
 .manager .lecture_state ul:hover li,
 .manager .qna_list ul:hover li  {background: #ababab; color: #fff; cursor: pointer; transition: all 0.1s;}
@@ -195,6 +196,10 @@ p {font-size:12px;}
     .manager .student_list ul li.state,
     .manager .qna_wrap ul li.num {display: none;}
     .manager .lecture_list {justify-content: center;}
+    /* 스크롤바 커스텀 */
+    .manager .lecture_state::-webkit-scrollbar {width: 3px;}
+    .manager .lecture_state::-webkit-scrollbar-track {background: #c3c3c3;}
+    .manager .lecture_state::-webkit-scrollbar-thumb {background: #7891a0;}
     .manager .manager_inner ul li.name {flex-basis: 50%;}
     .detail_info ul li {display: flex; width: 100%;}
     .detail_info ul li span {word-break: keep-all; flex-basis: 100px !important;}
